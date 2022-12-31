@@ -1,0 +1,222 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Cream: hsl(30, 38%, 92%);
+}
+
+p{
+    font-size: 14px;
+
+}
+body{
+    background-color: #f3eae3;
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+@media (max-width:767px) {
+    .container{
+        width: 350px;
+    }
+        
+    }
+
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+        
+    }
+    @media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+        
+    }
+    @media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+        
+    }
+
+
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.container .card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    background-color: white;
+    width: 580px;
+    border-radius: 10px;
+    height: 450px;
+}
+
+.container .card .pic img{
+    height: 100%;
+    margin-right: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.container .card .pic .mob{
+    display: none;
+}
+.container .card .info{
+    margin-top: 20px;
+    
+}
+
+.container .card .info .perfume{
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.container .card .info p{
+    color: var(--Dark-grayish-blue);
+    font-size: 16px;
+    width: 255px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .card .info h2{
+    font-family:  'Fraunces', serif;
+    font-weight: 700;
+    font-size: 33px;
+    margin-top: -5px;
+    width: 200px;
+    margin-top: 10px;
+    
+    
+}
+
+.container .card .info .price{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    margin-top: -20px;
+    
+}
+
+
+.container .card .info .price h3{
+    color: var(--Dark-cyan);
+    font-size: 30px;
+    font-family:  'Fraunces', serif;
+}
+.container .card .info .price h4{
+    font-size: 14px;
+    align-self: center;
+    color: var(--Dark-grayish-blue);
+    
+}
+.container .card .info .button{
+    display: flex;
+    justify-content: center;
+}
+
+.container .card .info .button button {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color:white ;
+    background-color: var(--Dark-cyan);
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+}
+.container .card .info .button span{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 45px;
+    font-size: 15px; 
+
+
+}
+
+
+@media (max-width:500px) {
+
+    .container .card{
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        height: 400px;
+        
+        
+    }
+    
+    .container .card .pic img{
+        display: none;
+        
+    }
+
+     .container .card .pic .mob{
+        display: block; 
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+     }
+     .container .card .info {
+        display: flex;
+        width: 100%;
+        height:100%;
+        align-self: center;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        margin: 0;
+        margin-top: 10px;
+     }
+     .container .card .info p{
+        font-size: 8px;
+        text-align: center;
+        margin: 0;
+        
+     }
+     .container .card .info h2{
+        font-size: 12px;
+        text-align: center;
+     }
+     .container .card .info h3{
+        font-size: 5px;
+        text-align: center;
+     }
+     .container .card .info .price{
+        margin: 0;
+        margin-top: 10px;
+     }
+     .container .card .info .price h4{
+        font-size: 8px;
+        text-align: center;
+     }
+     .container .card .info .price h3{
+        font-size: 20px;
+        text-align: center;
+     }
+}
